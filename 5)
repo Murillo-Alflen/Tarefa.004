@@ -1,0 +1,33 @@
+#include <studio.h>
+
+int main()
+{
+ int posicao, pontos;
+
+    printf("Digite a posição do corredor: ");
+    scanf("%d", &posicao);
+
+    if (posicao == 1) {
+        pontos = 10;
+    }
+    else if (posicao == 2) {
+        pontos = 8;
+    }
+    else if (posicao == 3) {
+        pontos = 6;
+    }
+    else if (posicao == 4) {
+        pontos = 4;
+    }
+    else if (posicao == 5) {
+        pontos = 2;
+    }
+    else if (posicao > 5) {
+        pontos = 0;
+    }
+
+
+
+    printf("O corredor recebeu %d pontos.\n", pontos);
+    return 0;
+}
