@@ -1,0 +1,27 @@
+#include <stdlib.h>
+
+int main()
+{
+     double temperatura, umidade;
+
+
+    printf("Digite a temperatura atual (em graus Celsius): ");
+    scanf("%lf", &temperatura);
+
+    printf("Digite a umidade relativa do ar (em porcentagem): ");
+    scanf("%lf", &umidade);
+
+    if (temperatura < 18.0 || umidade > 70.0) {
+        printf("Aquecimento Ligado e Desumidificador Ativado.\n");
+    }
+    else if (temperatura >= 18.0 && temperatura <= 22.0 && umidade >= 30.0 && umidade <= 50.0) {
+        printf("Condições ideais - Sistema em modo de economia.\n");
+    }
+    else if (temperatura > 22.0 && umidade < 30.0) {
+        printf("Ar Condicionado Ligado e Umidificador Ativado.\n");
+    }
+    else {
+        printf("Verificar Sistema - Ajustes Manuais Necessários.\n");
+    }
+    return 0;
+}
